@@ -5,6 +5,12 @@ extends Node2D
 # var b = "textvar"
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
+	#s#elf.set_process_input(true)
+	pass
+	
+
+
+func init(id):
+	print("passed id")
+	print(id)
 	pass
