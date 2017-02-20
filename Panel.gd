@@ -9,7 +9,7 @@ func _ready():
 	var r = get_viewport().get_visible_rect()
 	self.set_size(Vector2(r.size.x, r.size.y))
 	buildLib()
-	set_process_input(true)
+	#set_process_input(true)
 	pass
 
 
@@ -36,13 +36,16 @@ func drop_data(p, v):
 	pass
 
 func _input(ev):
-	if(ev.type == InputEvent.MOUSE_BUTTON):
-		if(ev.button_index == BUTTON_LEFT):
-			checkCollision(ev.pos)
+	
 	pass
 
 func checkCollision(evPos):
 	for go in gameObjects:
-		var a = go.get_node("Area2D")
+		#var a = go.get_node("Area2D")
+		print("a")
+	pass
 
+func set_active(node):
+	print("node")
+	print(node)
 	pass
