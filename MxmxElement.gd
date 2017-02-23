@@ -1,5 +1,7 @@
 extends Control
 
+export(Color) var highlightCol 
+
 func _ready():
 	self.set_process_input(true)
 	pass
@@ -14,3 +16,4 @@ func _input_event(ev):
 		var root = get_tree().get_root().get_child(0)
 		root.set_active(self)
 	pass
+

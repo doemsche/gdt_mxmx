@@ -35,17 +35,11 @@ func drop_data(p, v):
 	
 	pass
 
-func _input(ev):
-	
-	pass
-
-func checkCollision(evPos):
+func set_active(node):	
 	for go in gameObjects:
-		#var a = go.get_node("Area2D")
-		print("a")
+		if(node.get_name() == go.get_name()):
+			go.get_child(0).set_modulate(Color(231,0,102))
+		else :
+			go.get_child(0).set_modulate(Color(255,255,255))
 	pass
 
-func set_active(node):
-	print("node")
-	print(node)
-	pass

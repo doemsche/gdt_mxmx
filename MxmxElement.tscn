@@ -14,6 +14,7 @@ margin/top = 0.0
 margin/right = 222.0
 margin/bottom = 225.0
 script/script = ExtResource( 1 )
+highlightCol = Color( 0.90625, 0, 0.403564, 1 )
 
 [node name="TextureFrame" type="TextureFrame" parent="."]
 
